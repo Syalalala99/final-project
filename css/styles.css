@@ -1,14 +1,28 @@
 .navbar {
     background: rgb(67,66,70);
-    background: linear-gradient(180deg, rgba(67,66,70,1) 0%, rgba(99,98,98,1) 100%);    
+    background: linear-gradient(180deg, rgba(67,66,70,1) 0%, rgba(99,98,98,1) 100%);
+    z-index: 2;
+    width: 100%;
+    position: fixed;
 }
 .navbar-brand {
     color:white;
+    align-items: right;
 }
 .nav-link {
     text-align: right;
     color: white;
 }
+.nav-clock {
+    color: whitesmoke;
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
 #aboutset {
     position: relative;
     text-align: center;
@@ -19,13 +33,185 @@
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: wheat;
+    text-align: center;
+    font-size: 20px;
+}
+
+#experience {
+    max-width: auto;
+    display: block;
+    height: 400px ;
+    align-items: center ;
+    align-content: center;
+    padding: 80px;
+    background: rgb(67,66,70);
+    background: linear-gradient(180deg, rgba(67,66,70,1) 0%, rgba(99,98,98,1) 100%);
+    border:15px ;
+}
+.list-group-item {
+    text-align: left;
     color: white;
-    text-align: center;
+    background: gray;    
 }
-#footer-text {
-    text-align: center;
-}
+
 .profile-about {
 width: 100%;
 height: 660px;
 }
+#education {
+    display:flex;
+    background: rgb(67,66,70);
+    width: 100%;
+    padding-top: 80px;
+}
+.card-img-top {
+width: auto px;
+height: 400px;
+}
+.card-body{
+    background: rgb(67,66,70);
+    background: linear-gradient(180deg, rgba(67,66,70,1) 0%, rgba(99,98,98,1) 100%);
+}
+.card-text {
+    padding: 0 ;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+#skills {
+    display:flex;
+    background: rgb(67,66,70);
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#skills-text{
+    background: rgb(67,66,70);
+    background: linear-gradient(180deg, rgba(67,66,70,1) 0%, rgba(99,98,98,1) 100%);
+    text-align: center;
+    width: 100%;
+    color: wheat;
+    margin: 0;
+    padding-top: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card-img-skills {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-img-skill2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;   
+}
+.card-body-skills{
+    background: rgb(67,66,70);
+    background: linear-gradient(180deg, rgba(67,66,70,1) 0%, rgba(99,98,98,1) 100%);
+    width: auto;
+}
+.card-text-skills {
+    padding: 0 ;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.imgInt {
+    width: 400px ;
+    height: 660px;;
+}
+.interest-text{
+    background: rgb(67,66,70);
+    background: linear-gradient(180deg, rgba(67,66,70,1) 0%, rgba(99,98,98,1) 100%);
+    text-align: center;
+    width: 100%;
+    color: wheat;
+    margin: 0;
+    padding-top: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tittle-award {
+    background: rgb(67,66,70);
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;    
+}
+
+#award {
+    background: rgb(67,66,70);
+    width: 100%;
+    padding-top: 80px;
+}
+.award-img {
+    padding-top: 30px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+.award-text {
+    color: white;
+    text-align: center;
+font-size: 20 px;
+padding: 20px;
+}
+#footer-text {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #about {
+        margin: auto;
+        /* flex-direction: column; */
+    }
+    #experience {
+        margin: auto ;
+        flex-direction: column;
+    }
+    #education {
+        flex-direction:column;
+        margin: auto;
+        align-items: center;
+    }
+
+    #skills {
+        flex-direction:column;
+        margin: auto;
+        align-items: center;
+    }
+    #interest {
+        margin: auto;
+    }
+    #award {
+        flex-direction:column;
+        margin: auto;
+        align-items: center;
+    }
+    /* .profile-picture {
+        align-items: center; */
+    }
+
+
+  
+      
